@@ -1,0 +1,53 @@
+﻿@using Smartstore.Core.Content.Menus
+
+@model IReadOnlyList<MenuItem>
+@inject IBreadcrumb Breadcrumb
+
+@{ 
+    var trail = Model ?? Breadcrumb.Trail.AsReadOnly();
+    if (trail == null || trail.Count == 0)
+    {
+        return;
+    }
+
+    var itemAttrs = new AttributeDictionary();
+    itemAttrs.Add("itemscope", "");
+    itemAttrs.Add("itemprop", "itemListElement");
+    itemAttrs.Add("itemtype", "http://schema.org/ListItem");
+
+    var resHomepage = T("HomePage");
+}
+
+<zone name="breadcrumb_before"></zone>
+
+<nav class="breadcrumb-container d-none d-md-flex flex-wrap align-items-center mb-4" aria-label="@T("Aria.Label.Breadcrumb")">
+    <ol class="breadcrumb mb-0" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" attrs="itemAttrs">
+            <a asp-route="Homepage" title="@resHomepage" itemprop="item">
+                <meta itemprop="name" content="@resHomepage">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="sr-only">@resHomepage</span>
+            </a>
+            <meta itemprop="position" content="1">
+        </li>
+        @for (int i = 0; i < trail.Count - 1; i++)
+        {
+            var item = trail[i];
+            var isLast = i == trail.Count - 1;
+
+            <li class="breadcrumb-item" attr-class='(isLast, "active")' attrs="itemAttrs">
+                @if (item.HasRoute)
+                {
+                    <a href="@item.GenerateUrl(this.Url)" title="@item.Text" itemprop="item"><span itemprop="name" dir="auto">@item.Text</span></a>
+                    <meta itemprop="position" content="@(i + 2)">
+                }
+            </li>
+        }
+        <li class="breadcrumb-item active" aria-current="page" attrs="itemAttrs">
+            <span itemprop="name">@Html.Raw(trail.LastOrDefault().Text)</span>
+            <meta itemprop="position" content="@(trail.Count + 1)">
+        </li>
+    </ol>
+</nav>
+
+<zone name="breadcrumb_after"></zone>

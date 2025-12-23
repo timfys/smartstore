@@ -1,0 +1,31 @@
+﻿@using Smartstore.Web.Models.Catalog;
+
+@model ProductSummaryItemModel
+
+@{
+    var list = Model.Parent;
+    var numColorAttributes = Model.ColorAttributes?.Count ?? 0;
+}
+
+<div class="art-variant-info">
+    @if (numColorAttributes > 0)
+    {
+        <nav class="art-color-opts" role="listbox" aria-orientation="horizontal" aria-label="@Model.ColorAttributes[0].AttributeName">
+        @foreach (var clr in Model.ColorAttributes)
+        {
+            var title = T("Products.ChooseColorX", clr.FriendlyName, clr.AttributeName);
+            <a href="@clr.ProductUrl" class="art-color-opt" style="background-color: @clr.Color" role="option" aria-label="@title" title="@title">
+                <span class="sr-only">@clr.FriendlyName</span>
+            </a>
+        }
+        </nav>
+    }
+    <div sm-if="Model.Attributes.Count > 0" class="art-more-opts">
+        <span class="bidi-embed@(list.ViewMode == ProductSummaryViewMode.List ? "" : " d-block")">
+            @T(Model.Attributes.Count == 1 ? "Products.PlusOption" : "Products.PlusOptions"):
+        </span>
+        <a href="@Model.DetailUrl" class="art-more-opt-link d-block text-truncate">
+            <span class="fwm bidi-embed" sm-language-attributes-for="Model.Attributes[0].Name">@string.Join(", ", Model.Attributes.Select(x => x.Name.ToHtmlString())).Truncate(50, "...")</span>
+        </a>
+    </div>
+</div>
