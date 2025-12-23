@@ -127,7 +127,7 @@
 
         <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your project-->
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-		<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+		<AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
       
 		<!-- More details about GC: https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals -->
 		<!--<ServerGarbageCollection>true</ServerGarbageCollection>-->
