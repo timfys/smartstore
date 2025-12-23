@@ -29,7 +29,8 @@
         <PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="6.0.36" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="6.0.36" />
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.11">
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.11">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
@@ -71,6 +72,9 @@
 		<Content Include="Areas\Admin\sitemap.xml" CopyToPublishDirectory="PreserveNewest" />
 		<None Include="Areas\Admin\Views\**\*.cshtml" CopyToPublishDirectory="PreserveNewest" />
 	</ItemGroup>
+    <ItemGroup>
+        <Content Include="Smartstore.Data.Sqlite.dll" CopyToPublishDirectory="PreserveNewest" />
+    </ItemGroup>
     <ItemGroup>
         <Content Include="App_Data\Tenants\Default\mekashronDB.db">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
