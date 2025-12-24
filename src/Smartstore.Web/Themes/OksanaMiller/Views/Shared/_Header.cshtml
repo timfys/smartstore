@@ -1,0 +1,48 @@
+<header class="header">
+    <div class="header__container">
+
+        <!-- Логотип -->
+        <div class="header__logo">
+            <a asp-route="HomePage">
+                <div class="logo__image"></div>
+            </a>
+            <div class="logo__text">
+                OKSANA MILLER
+            </div>
+        </div>
+
+        <!-- Навигация (desktop) -->
+        <nav class="header__nav">
+            <a href="aboutus" class="nav__link">About</a>
+            <a href="recentlyviewedproducts" class="nav__link">Collection</a>
+            <a href="newproducts" class="nav__link">Showcase</a>
+        </nav>
+
+        <!-- Иконки (desktop) -->
+        <div class="header__icons">
+            <a href="cart" class="icon__cart"></a>
+            <a href="wishlist" class="icon__favorite"></a>
+            <a href="customer/info" class="icon__user"></a>
+        </div>
+
+        <!-- Бургер (mobile) -->
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="aboutus" class="nav__link">About</a>
+        <a href="recentlyviewedproducts" class="nav__link">Collection</a>
+        <a href="newproducts" class="nav__link">Showcase</a>
+    </div>
+</header>
+<script>
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('active');
+    }
+</script>
