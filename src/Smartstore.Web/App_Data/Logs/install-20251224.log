@@ -1,0 +1,220 @@
+12/24/2025 01:20:52 [INF] Checking requirements
+12/24/2025 01:20:55 [INF] Building database
+12/24/2025 01:21:00 [INF] Installing module 1 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.AmazonPay, Version: 6.3.0, Description: 'Amazon Pay'
+12/24/2025 01:21:01 [INF] Installing module 2 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Apple.Auth, Version: 6.3.0, Description: 'Apple Authentication'
+12/24/2025 01:21:01 [INF] Installing module 3 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Clickatell, Version: 6.3.0, Description: 'Clickatell SMS Provider'
+12/24/2025 01:21:01 [INF] Installing module 4 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.DevTools, Version: 6.3.0, Description: 'Smartstore Developer Tools (MiniProfiler and other goodies)'
+12/24/2025 01:21:01 [INF] Installing module 5 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Facebook.Auth, Version: 6.3.0, Description: 'Facebook Authentication'
+12/24/2025 01:21:01 [INF] Installing module 6 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Google.Analytics, Version: 6.3.0, Description: 'Google Analytics'
+12/24/2025 01:21:01 [INF] Installing module 7 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Google.Auth, Version: 6.3.0, Description: 'Google Authentication'
+12/24/2025 01:21:01 [INF] Installing module 8 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Google.MerchantCenter, Version: 6.3.0, Description: 'Google Merchant Center (GMC) feed'
+12/24/2025 01:21:01 [INF] Installing module 9 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Microsoft.Auth, Version: 6.3.0, Description: 'Microsoft Authentication'
+12/24/2025 01:21:01 [INF] Installing module 10 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.OfflinePayment, Version: 6.3.0, Description: 'Adds offline payment methods to the store'
+12/24/2025 01:21:01 [INF] Installing module 11 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.PayPal, Version: 6.3.0, Description: 'Smartstore.PayPal'
+12/24/2025 01:21:01 [INF] Installing module 12 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Shipping, Version: 6.3.0, Description: 'Default Shipping Providers'
+12/24/2025 01:21:01 [INF] Installing module 13 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.ShippingByWeight, Version: 6.3.0, Description: 'Shipping by weight'
+12/24/2025 01:21:01 [INF] Installing module 14 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Stripe, Version: 6.3.0, Description: 'Stripe'
+12/24/2025 01:21:01 [INF] Installing module 15 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Tax, Version: 6.3.0, Description: 'Default Tax Providers'
+12/24/2025 01:21:01 [INF] Installing module 16 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.Twitter.Auth, Version: 6.3.0, Description: 'X Authentication'
+12/24/2025 01:21:01 [INF] Installing module 17 of 17
+12/24/2025 01:21:01 [INF] Module installed: SystemName: Smartstore.WebApi, Version: 6.3.0, Description: 'Smartstore Web API'
+12/24/2025 01:21:01 [INF] Processing media files
+12/24/2025 01:21:01 [INF] Finalizing installation
+12/24/2025 01:21:01 [INF] Installation completed successfully
+12/24/2025 04:16:17 [INF] Checking requirements
+12/24/2025 04:16:19 [INF] Building database
+12/24/2025 04:16:19 [ERR] SQLite Error 14: 'unable to open database file'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+   at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+   at Smartstore.DatabaseFacadeExtensions.EnsureCreatedSchemalessAsync(DatabaseFacade databaseFacade, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore\Data\Extensions\DatabaseFacadeExtensions.cs:line 63
+   at Smartstore.Core.Installation.InstallationService.InstallAsync(InstallationModel model, ILifetimeScope scope, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore.Core\Platform\Installation\InstallationService.cs:line 260
+12/24/2025 04:17:35 [INF] Checking requirements
+12/24/2025 04:17:35 [INF] Building database
+12/24/2025 04:17:35 [ERR] SQLite Error 14: 'unable to open database file'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+   at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+   at Smartstore.DatabaseFacadeExtensions.EnsureCreatedSchemalessAsync(DatabaseFacade databaseFacade, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore\Data\Extensions\DatabaseFacadeExtensions.cs:line 63
+   at Smartstore.Core.Installation.InstallationService.InstallAsync(InstallationModel model, ILifetimeScope scope, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore.Core\Platform\Installation\InstallationService.cs:line 260
+12/24/2025 04:17:56 [INF] Checking requirements
+12/24/2025 04:17:57 [INF] Building database
+12/24/2025 04:17:57 [ERR] SQLite Error 14: 'unable to open database file'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+   at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+   at Smartstore.DatabaseFacadeExtensions.EnsureCreatedSchemalessAsync(DatabaseFacade databaseFacade, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore\Data\Extensions\DatabaseFacadeExtensions.cs:line 63
+   at Smartstore.Core.Installation.InstallationService.InstallAsync(InstallationModel model, ILifetimeScope scope, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore.Core\Platform\Installation\InstallationService.cs:line 260
+12/24/2025 04:18:51 [INF] Checking requirements
+12/24/2025 04:18:51 [INF] Building database
+12/24/2025 04:18:52 [ERR] SQLite Error 14: 'unable to open database file'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+   at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+   at Smartstore.DatabaseFacadeExtensions.EnsureCreatedSchemalessAsync(DatabaseFacade databaseFacade, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore\Data\Extensions\DatabaseFacadeExtensions.cs:line 63
+   at Smartstore.Core.Installation.InstallationService.InstallAsync(InstallationModel model, ILifetimeScope scope, CancellationToken cancelToken) in C:\Users\timofey\RiderProjects\smartstore\src\Smartstore.Core\Platform\Installation\InstallationService.cs:line 260
+12/24/2025 04:18:58 [INF] Checking requirements
+12/24/2025 04:18:58 [INF] Building database
+12/24/2025 04:19:03 [INF] Installing module 1 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.AmazonPay, Version: 6.3.0, Description: 'Amazon Pay'
+12/24/2025 04:19:03 [INF] Installing module 2 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Apple.Auth, Version: 6.3.0, Description: 'Apple Authentication'
+12/24/2025 04:19:03 [INF] Installing module 3 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Clickatell, Version: 6.3.0, Description: 'Clickatell SMS Provider'
+12/24/2025 04:19:03 [INF] Installing module 4 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.DevTools, Version: 6.3.0, Description: 'Smartstore Developer Tools (MiniProfiler and other goodies)'
+12/24/2025 04:19:03 [INF] Installing module 5 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Facebook.Auth, Version: 6.3.0, Description: 'Facebook Authentication'
+12/24/2025 04:19:03 [INF] Installing module 6 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Google.Analytics, Version: 6.3.0, Description: 'Google Analytics'
+12/24/2025 04:19:03 [INF] Installing module 7 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Google.Auth, Version: 6.3.0, Description: 'Google Authentication'
+12/24/2025 04:19:03 [INF] Installing module 8 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Google.MerchantCenter, Version: 6.3.0, Description: 'Google Merchant Center (GMC) feed'
+12/24/2025 04:19:03 [INF] Installing module 9 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.Microsoft.Auth, Version: 6.3.0, Description: 'Microsoft Authentication'
+12/24/2025 04:19:03 [INF] Installing module 10 of 17
+12/24/2025 04:19:03 [INF] Module installed: SystemName: Smartstore.OfflinePayment, Version: 6.3.0, Description: 'Adds offline payment methods to the store'
+12/24/2025 04:19:03 [INF] Installing module 11 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.PayPal, Version: 6.3.0, Description: 'Smartstore.PayPal'
+12/24/2025 04:19:04 [INF] Installing module 12 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.Shipping, Version: 6.3.0, Description: 'Default Shipping Providers'
+12/24/2025 04:19:04 [INF] Installing module 13 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.ShippingByWeight, Version: 6.3.0, Description: 'Shipping by weight'
+12/24/2025 04:19:04 [INF] Installing module 14 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.Stripe, Version: 6.3.0, Description: 'Stripe'
+12/24/2025 04:19:04 [INF] Installing module 15 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.Tax, Version: 6.3.0, Description: 'Default Tax Providers'
+12/24/2025 04:19:04 [INF] Installing module 16 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.Twitter.Auth, Version: 6.3.0, Description: 'X Authentication'
+12/24/2025 04:19:04 [INF] Installing module 17 of 17
+12/24/2025 04:19:04 [INF] Module installed: SystemName: Smartstore.WebApi, Version: 6.3.0, Description: 'Smartstore Web API'
+12/24/2025 04:19:04 [INF] Processing media files
+12/24/2025 04:19:04 [INF] Finalizing installation
+12/24/2025 04:19:04 [INF] Installation completed successfully
+12/24/2025 04:44:40 [INF] Checking requirements
+12/24/2025 04:44:42 [INF] Building database
+12/24/2025 04:44:45 [INF] Installing module 1 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.AmazonPay, Version: 6.3.0, Description: 'Amazon Pay'
+12/24/2025 04:44:46 [INF] Installing module 2 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Apple.Auth, Version: 6.3.0, Description: 'Apple Authentication'
+12/24/2025 04:44:46 [INF] Installing module 3 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Clickatell, Version: 6.3.0, Description: 'Clickatell SMS Provider'
+12/24/2025 04:44:46 [INF] Installing module 4 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.DevTools, Version: 6.3.0, Description: 'Smartstore Developer Tools (MiniProfiler and other goodies)'
+12/24/2025 04:44:46 [INF] Installing module 5 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Facebook.Auth, Version: 6.3.0, Description: 'Facebook Authentication'
+12/24/2025 04:44:46 [INF] Installing module 6 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Google.Analytics, Version: 6.3.0, Description: 'Google Analytics'
+12/24/2025 04:44:46 [INF] Installing module 7 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Google.Auth, Version: 6.3.0, Description: 'Google Authentication'
+12/24/2025 04:44:46 [INF] Installing module 8 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Google.MerchantCenter, Version: 6.3.0, Description: 'Google Merchant Center (GMC) feed'
+12/24/2025 04:44:46 [INF] Installing module 9 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Microsoft.Auth, Version: 6.3.0, Description: 'Microsoft Authentication'
+12/24/2025 04:44:46 [INF] Installing module 10 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.OfflinePayment, Version: 6.3.0, Description: 'Adds offline payment methods to the store'
+12/24/2025 04:44:46 [INF] Installing module 11 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.PayPal, Version: 6.3.0, Description: 'Smartstore.PayPal'
+12/24/2025 04:44:46 [INF] Installing module 12 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Shipping, Version: 6.3.0, Description: 'Default Shipping Providers'
+12/24/2025 04:44:46 [INF] Installing module 13 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.ShippingByWeight, Version: 6.3.0, Description: 'Shipping by weight'
+12/24/2025 04:44:46 [INF] Installing module 14 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Stripe, Version: 6.3.0, Description: 'Stripe'
+12/24/2025 04:44:46 [INF] Installing module 15 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Tax, Version: 6.3.0, Description: 'Default Tax Providers'
+12/24/2025 04:44:46 [INF] Installing module 16 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.Twitter.Auth, Version: 6.3.0, Description: 'X Authentication'
+12/24/2025 04:44:46 [INF] Installing module 17 of 17
+12/24/2025 04:44:46 [INF] Module installed: SystemName: Smartstore.WebApi, Version: 6.3.0, Description: 'Smartstore Web API'
+12/24/2025 04:44:46 [INF] Processing media files
+12/24/2025 04:44:47 [INF] Finalizing installation
+12/24/2025 04:44:47 [INF] Installation completed successfully
+12/24/2025 05:04:00 [INF] Checking requirements
+12/24/2025 05:04:02 [INF] Building database
+12/24/2025 05:04:06 [INF] Installing module 1 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.AmazonPay, Version: 6.3.0, Description: 'Amazon Pay'
+12/24/2025 05:04:07 [INF] Installing module 2 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Apple.Auth, Version: 6.3.0, Description: 'Apple Authentication'
+12/24/2025 05:04:07 [INF] Installing module 3 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Clickatell, Version: 6.3.0, Description: 'Clickatell SMS Provider'
+12/24/2025 05:04:07 [INF] Installing module 4 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.DevTools, Version: 6.3.0, Description: 'Smartstore Developer Tools (MiniProfiler and other goodies)'
+12/24/2025 05:04:07 [INF] Installing module 5 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Facebook.Auth, Version: 6.3.0, Description: 'Facebook Authentication'
+12/24/2025 05:04:07 [INF] Installing module 6 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Google.Analytics, Version: 6.3.0, Description: 'Google Analytics'
+12/24/2025 05:04:07 [INF] Installing module 7 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Google.Auth, Version: 6.3.0, Description: 'Google Authentication'
+12/24/2025 05:04:07 [INF] Installing module 8 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Google.MerchantCenter, Version: 6.3.0, Description: 'Google Merchant Center (GMC) feed'
+12/24/2025 05:04:07 [INF] Installing module 9 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Microsoft.Auth, Version: 6.3.0, Description: 'Microsoft Authentication'
+12/24/2025 05:04:07 [INF] Installing module 10 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.OfflinePayment, Version: 6.3.0, Description: 'Adds offline payment methods to the store'
+12/24/2025 05:04:07 [INF] Installing module 11 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.PayPal, Version: 6.3.0, Description: 'Smartstore.PayPal'
+12/24/2025 05:04:07 [INF] Installing module 12 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.Shipping, Version: 6.3.0, Description: 'Default Shipping Providers'
+12/24/2025 05:04:07 [INF] Installing module 13 of 17
+12/24/2025 05:04:07 [INF] Module installed: SystemName: Smartstore.ShippingByWeight, Version: 6.3.0, Description: 'Shipping by weight'
+12/24/2025 05:04:08 [INF] Installing module 14 of 17
+12/24/2025 05:04:08 [INF] Module installed: SystemName: Smartstore.Stripe, Version: 6.3.0, Description: 'Stripe'
+12/24/2025 05:04:08 [INF] Installing module 15 of 17
+12/24/2025 05:04:08 [INF] Module installed: SystemName: Smartstore.Tax, Version: 6.3.0, Description: 'Default Tax Providers'
+12/24/2025 05:04:08 [INF] Installing module 16 of 17
+12/24/2025 05:04:08 [INF] Module installed: SystemName: Smartstore.Twitter.Auth, Version: 6.3.0, Description: 'X Authentication'
+12/24/2025 05:04:08 [INF] Installing module 17 of 17
+12/24/2025 05:04:08 [INF] Module installed: SystemName: Smartstore.WebApi, Version: 6.3.0, Description: 'Smartstore Web API'
+12/24/2025 05:04:08 [INF] Processing media files
+12/24/2025 05:04:08 [INF] Finalizing installation
+12/24/2025 05:04:08 [INF] Installation completed successfully

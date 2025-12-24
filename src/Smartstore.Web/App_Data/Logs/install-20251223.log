@@ -1,0 +1,39 @@
+12/23/2025 19:16:23 [INF] Checking requirements
+12/23/2025 19:16:25 [INF] Building database
+12/23/2025 19:16:31 [INF] Installing module 1 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.AmazonPay, Version: 6.3.0, Description: 'Amazon Pay'
+12/23/2025 19:16:31 [INF] Installing module 2 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Apple.Auth, Version: 6.3.0, Description: 'Apple Authentication'
+12/23/2025 19:16:31 [INF] Installing module 3 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Clickatell, Version: 6.3.0, Description: 'Clickatell SMS Provider'
+12/23/2025 19:16:31 [INF] Installing module 4 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.DevTools, Version: 6.3.0, Description: 'Smartstore Developer Tools (MiniProfiler and other goodies)'
+12/23/2025 19:16:31 [INF] Installing module 5 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Facebook.Auth, Version: 6.3.0, Description: 'Facebook Authentication'
+12/23/2025 19:16:31 [INF] Installing module 6 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Google.Analytics, Version: 6.3.0, Description: 'Google Analytics'
+12/23/2025 19:16:31 [INF] Installing module 7 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Google.Auth, Version: 6.3.0, Description: 'Google Authentication'
+12/23/2025 19:16:31 [INF] Installing module 8 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Google.MerchantCenter, Version: 6.3.0, Description: 'Google Merchant Center (GMC) feed'
+12/23/2025 19:16:31 [INF] Installing module 9 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Microsoft.Auth, Version: 6.3.0, Description: 'Microsoft Authentication'
+12/23/2025 19:16:31 [INF] Installing module 10 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.OfflinePayment, Version: 6.3.0, Description: 'Adds offline payment methods to the store'
+12/23/2025 19:16:31 [INF] Installing module 11 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.PayPal, Version: 6.3.0, Description: 'Smartstore.PayPal'
+12/23/2025 19:16:31 [INF] Installing module 12 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Shipping, Version: 6.3.0, Description: 'Default Shipping Providers'
+12/23/2025 19:16:31 [INF] Installing module 13 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.ShippingByWeight, Version: 6.3.0, Description: 'Shipping by weight'
+12/23/2025 19:16:31 [INF] Installing module 14 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Stripe, Version: 6.3.0, Description: 'Stripe'
+12/23/2025 19:16:31 [INF] Installing module 15 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Tax, Version: 6.3.0, Description: 'Default Tax Providers'
+12/23/2025 19:16:31 [INF] Installing module 16 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.Twitter.Auth, Version: 6.3.0, Description: 'X Authentication'
+12/23/2025 19:16:31 [INF] Installing module 17 of 17
+12/23/2025 19:16:31 [INF] Module installed: SystemName: Smartstore.WebApi, Version: 6.3.0, Description: 'Smartstore Web API'
+12/23/2025 19:16:31 [INF] Processing media files
+12/23/2025 19:16:32 [INF] Finalizing installation
+12/23/2025 19:16:32 [INF] Installation completed successfully
