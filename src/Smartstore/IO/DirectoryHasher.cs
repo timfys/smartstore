@@ -21,7 +21,7 @@ namespace Smartstore.IO
 
         static DirectoryHasher()
         {
-            _defaultStorageDir = DataSettings.Instance.TenantRoot.GetDirectory("Hash");
+            _defaultStorageDir = CommonHelper.ContentRoot.GetDirectory("../hash");
             _defaultStorageDir.Create();
         }
 
@@ -30,7 +30,7 @@ namespace Smartstore.IO
             Guard.NotNull(source, nameof(source));
 
             _source = source;
-            _storageDir = storageDir ?? _defaultStorageDir;
+            _storageDir = _defaultStorageDir;
             _searchPattern = searchPattern;
             _hasPattern = searchPattern.HasValue() && searchPattern != "*";
             _deep = deep;

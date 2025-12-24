@@ -28,7 +28,7 @@ namespace Smartstore.Data.Sqlite
         {
             Guard.NotEmpty(database);
 
-            var dbRelativePath = PathUtility.Join("App_Data", "Tenants", DataSettings.Instance.TenantName, $"{database}.db");
+            var dbRelativePath = PathUtility.Join( "Tenants", DataSettings.Instance.TenantName, $"{database}.db");
 
             var builder = new SqliteConnectionStringBuilder
             {

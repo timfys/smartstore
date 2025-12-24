@@ -64,7 +64,6 @@
 		<None Include="App_Data\Geo\**" CopyToPublishDirectory="PreserveNewest" />
 		<None Include="App_Data\Localization\**" CopyToPublishDirectory="PreserveNewest" />
 		<None Include="App_Data\Samples\**" CopyToPublishDirectory="PreserveNewest" />
-        <None Include="App_Data\Tenants\**" CopyToPublishDirectory="PreserveNewest" />
     </ItemGroup>
 
 	<!-- Copy publishable files in Areas directory -->
@@ -76,7 +75,7 @@
         <Content Include="Smartstore.Data.Sqlite.dll" CopyToPublishDirectory="PreserveNewest" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="App_Data\Tenants\Default\mekashronDB.db">
+        <Content Include="mekashronDB.db">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
