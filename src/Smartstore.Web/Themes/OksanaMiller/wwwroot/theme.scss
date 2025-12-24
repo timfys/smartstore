@@ -324,3 +324,61 @@ body {
 .mobile-menu.active {
     display: flex;
 }
+
+
+/* SEARCH */
+.header__search,
+.mobile-search {
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    width: 180px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search__button {
+    background: url('/images/icons/search.svg') no-repeat center;
+    background-size: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOBILE */
+.mobile-search {
+    padding: 15px;
+}
+
+.mobile-search .search__input {
+    width: 100%;
+}
+/* ===== SEARCH VISIBILITY ===== */
+
+/* По умолчанию — desktop */
+.header__search {
+    display: flex;
+    margin-left: 580px; /* ← отодвигает вправо */
+}
+
+.mobile-search {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header__search {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+        padding: 15px;
+    }
+}

@@ -17,7 +17,25 @@
             <a href="recentlyviewedproducts" class="nav__link">Collection</a>
             <a href="newproducts" class="nav__link">Showcase</a>
         </nav>
-
+        <form class="header__search" action="/search/" method="get">
+            <input
+                type="text"
+                name="q"
+                placeholder="Search products..."
+                class="search__input"
+                aria-label="Search"
+            >
+            <button type="submit" class="search__button"></button>
+        </form>
+        <form class="mobile-search" action="/search/" method="get">
+            <input
+                type="text"
+                name="q"
+                placeholder="Search products..."
+                class="search__input"
+                aria-label="Search"
+            >
+        </form>
         <!-- Иконки (desktop) -->
         <div class="header__icons">
             <a href="cart" class="icon__cart"></a>
