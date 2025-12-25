@@ -1,11 +1,6 @@
 /Themes/oksanamiller/theme.scss
 /.app/moduleimports.scss
 /.app/themevars.scss
-/Modules/Smartstore.AmazonPay/public.scss
-/Modules/Smartstore.DevTools/_core.scss
-/Modules/Smartstore.DevTools/public.scss
-/Modules/Smartstore.PayPal/public.scss
-/Modules/Smartstore.Stripe/public.scss
 /Themes/oksanamiller/_accordion.scss
 /Themes/oksanamiller/_artlist.scss
 /Themes/oksanamiller/_block.scss

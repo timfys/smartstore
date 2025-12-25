@@ -90,9 +90,13 @@
 
         <zone name="footer_before"></zone>
 
-        <zone name="footer" replace-content="true">
+        @*<zone name="footer" replace-content="true">
             @await Component.InvokeAsync("Footer")
-        </zone>
+        </zone>*@
+        @if (ThemeContext.WorkingThemeName == "OksanaMiller")
+        {
+        @await Html.PartialAsync("/Themes/OksanaMiller/Views/Shared/_Footer.cshtml")
+        }
 
         <zone name="page-end"></zone>
     </div>

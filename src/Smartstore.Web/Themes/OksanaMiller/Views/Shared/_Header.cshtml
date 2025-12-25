@@ -13,9 +13,9 @@
 
         <!-- Навигация (desktop) -->
         <nav class="header__nav">
-            <a href="/aboutus" class="nav__link">About</a>
-            <a href="/recentlyviewedproducts" class="nav__link">Collection</a>
-            <a href="/newproducts" class="nav__link">Showcase</a>
+            <a href="/#about-brand" class="nav__link">About</a>
+            <a href="/#collections-section" class="nav__link">Collection</a>
+            <a href="/#collections-section" class="nav__link">Showcase</a>
         </nav>
         <form class="header__search" action="/search/" method="get">
             <input
@@ -54,9 +54,9 @@
 
     <!-- Мобильное меню -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="/aboutus" class="nav__link">About</a>
-        <a href="/recentlyviewedproducts" class="nav__link">Collection</a>
-        <a href="/newproducts" class="nav__link">Showcase</a>
+        <a href="/#about-brand" class="nav__link">About</a>
+        <a href="/#collections-section" class="nav__link">Collection</a>
+        <a href="/#collections-section" class="nav__link">Showcase</a>
     </div>
 </header>
 <script>
@@ -290,3 +290,24 @@
     }
     }
 </style>
+<script>
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const hash = this.hash;
+            if (!hash) return;
+
+            const target = document.querySelector(hash);
+            if (!target) return;
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            // обновляем URL без перезагрузки
+            history.pushState(null, '', hash);
+        });
+    });
+</script>

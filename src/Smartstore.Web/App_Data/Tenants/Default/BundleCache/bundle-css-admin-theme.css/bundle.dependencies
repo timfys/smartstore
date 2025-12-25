@@ -1,8 +1,6 @@
 /admin/theme.scss
 ../lib/bootstrap/scss/vendor/rfs
 /.app/moduleimports.scss
-/Modules/Smartstore.DevTools/_core.scss
-/Modules/Smartstore.DevTools/admin.scss
 /admin/_admin.scss
 /admin/_dashboard.scss
 /admin/_variables.scss
